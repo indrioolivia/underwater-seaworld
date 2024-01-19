@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Predator
+comment1.params=speed
+comment1.target=void\ moveLeft(int)
+comment2.params=
+comment2.target=void\ checkCollision()
+comment3.params=
+comment3.target=void\ checkEdge()
+numComments=4
