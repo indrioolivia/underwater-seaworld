@@ -1,6 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-public class MainFish extends Actor
+public class MainFish extends Fish
 {
     public void act()
     {
@@ -26,27 +26,27 @@ public class MainFish extends Actor
     
     private void checkCollision()
     {
-        if(isTouching(Fish_Satu.class))
+        if(isTouching(Clownfish.class))
         {
-            removeTouching(Fish_Satu.class);
-            Level_Satu.score.add(2);
-            Level_Dua.score.add(3);
-            Level_Tiga.score.add(4);
+            removeTouching(Clownfish.class);
+            Easy.score.add(2);
+            Medium.score.add(3);
+            Hard.score.add(4);
             Greenfoot.playSound("bite1.wav");
         }
-        if(isTouching(Fish_Dua.class))
+        if(isTouching(BlueTang.class))
         {
-            removeTouching(Fish_Dua.class);
-            Level_Satu.score.add(2);
-            Level_Dua.score.add(5);
-            Level_Tiga.score.add(6);
+            removeTouching(BlueTang.class);
+            Easy.score.add(2);
+            Medium.score.add(5);
+            Hard.score.add(6);
             Greenfoot.playSound("bite2.wav");
         }
-        if(isTouching(Fish_Tiga.class))
+        if(isTouching(Pompano.class))
         {
-            removeTouching(Fish_Tiga.class);
-            Level_Dua.score.add(6);
-            Level_Tiga.score.add(7);
+            removeTouching(Pompano.class);
+            Medium.score.add(6);
+            Hard.score.add(7);
             Greenfoot.playSound("bite3.wav");
         }
     }
