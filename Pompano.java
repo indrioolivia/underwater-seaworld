@@ -10,7 +10,7 @@ public class Pompano extends Fish
     
     public void act()
     {
-        super.move();
+        super.act();
     }
     
     protected void checkEdge()

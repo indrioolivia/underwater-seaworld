@@ -6,7 +6,6 @@ public class Easy extends Level
     {
         super();
     }
-    
 
     protected void prepare()
     {

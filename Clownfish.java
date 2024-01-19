@@ -5,17 +5,14 @@ public class Clownfish extends Fish
     
     public Clownfish()
     {
-        super(); // Call the constructor of the parent class
+        super(); 
     }
 
-    // Override the move method for custom behavior
     public void act()
     {
-        super.move(); // Call the move method of the parent class
-        // Additional behavior specific to Fish1
+        super.act(); 
     }
 
-    // Overload the checkEdge method for custom behavior
     protected void checkEdge()
     {
         super.checkEdge(); 

@@ -10,7 +10,7 @@ public class BlueTang extends Fish
     
     public void act()
     {
-        super.move();
+        super.act();
     }
     
     protected void checkEdge()
