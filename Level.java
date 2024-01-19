@@ -17,15 +17,15 @@ public abstract class Level extends World
     {
         if(Greenfoot.getRandomNumber(90) < 3)
         {
-            addObject(new Fish_Satu(), 948, Greenfoot.getRandomNumber(360));
+            addObject(new Clownfish(), 948, Greenfoot.getRandomNumber(360));
         }
         if(Greenfoot.getRandomNumber(150) < 3)
         {
-            addObject(new Fish_Dua(), 948, Greenfoot.getRandomNumber(360));
+            addObject(new BlueTang(), 948, Greenfoot.getRandomNumber(360));
         }
         if(Greenfoot.getRandomNumber(200) < 3)
         {
-            addObject(new Predator_Satu(), 948, Greenfoot.getRandomNumber(360));
+            addObject(new Fugu(), 948, Greenfoot.getRandomNumber(360));
         }
         checkScore();
     }

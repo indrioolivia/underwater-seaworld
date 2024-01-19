@@ -1,17 +1,17 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-public class HelpPage extends World
+public class HelpPage extends Page
 {
     public HelpPage()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(950, 550, 1); 
+        super(); 
         prepare();
     }
 
-    private void prepare()
+    public void prepare()
     {
-        BackButton backButton = new BackButton();
+        Back backButton = new Back();
         addObject(backButton,79,480);
     }
 }

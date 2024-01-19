@@ -6,14 +6,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Quit extends Actor
+public class Quit extends Button
 {
-    /**
-     * Act - do whatever the Quit wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    public void act()
-    {
+    public void click() {
         if(Greenfoot.mousePressed(this))
         {
             getImage().scale((int)Math.round(getImage().getWidth()*0.9),
@@ -24,5 +19,10 @@ public class Quit extends Actor
             Greenfoot.delay(5);
             Greenfoot.setWorld(new HomePage());
         }
+    }
+    
+    public void act()
+    {
+        this.click();
     }
 }
